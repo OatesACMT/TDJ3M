@@ -74,17 +74,30 @@
 					height: 150px;
 					width: calc(100% / 4 - 38px);
 				}
-				
 				/* quand l'ecran est moins que 800px */
 				@media screen and (max-width: 800px) {
+					#header,#footer{
+				background-color: aqua;
+flex-direction: row-reverse;
+				
 				}
+				#nav{flex-derection: colum-reverse; flex: 10%;}
+				#header{display: flex; flex-directions: row-reverse}
+				#mainContenu{flex: 50%;}
+				#aside{:flex 20%;}
+			}
+
 
 				/* quand l'ecran est moins que 650px */
 				@media screen and (max-width: 650px) {
+				#aside{flex-direction: row;}
 				}
 				
 				/* quand l'ecran est moins que 600px */
 				@media screen and (max-width: 600px) {
+				
+					#aside{}
+					.contenuCacheMoins600px{display: none}
 				}
 			
 			</style>
